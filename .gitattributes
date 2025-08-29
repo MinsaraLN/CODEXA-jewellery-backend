@@ -1,2 +1,24 @@
 /mvnw text eol=lf
 *.cmd text eol=crlf
+
+# Look fro the below code if CI/CD error or deplyment error happen!!!!!!!!!!!!!
+*               text=auto
+
+# Code & config (LF everywhere)
+*.java          text eol=lf
+*.kt            text eol=lf
+*.properties    text eol=lf
+*.yml           text eol=lf
+*.yaml          text eol=lf
+*.sql           text eol=lf
+*.md            text eol=lf
+
+# Build wrappers & shell scripts (LF; important for Linux/CI)
+#/mvnw already present; keep it
+/mvnw           text eol=lf
+/gradlew        text eol=lf
+*.sh            text eol=lf
+
+# Windows-only scripts (CRLF is fine)
+*.bat           text eol=crlf
+*.cmd           text eol=crlf
